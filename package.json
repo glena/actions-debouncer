@@ -1,0 +1,26 @@
+{
+  "name": "actions-debouncer",
+  "repository": "glena/actions-debouncer",
+  "version": "1.0.0",
+  "description": "Debounce actions to ensure it will be processed only once.",
+  "main": "index.js",
+  "scripts": {
+    "dist": "babel index.js -d dist",
+    "test": "mocha --compilers js:babel-core/register test/**/*.test.js"
+  },
+  "author": "Germán Lena german.lena@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "debounce",
+    "async",
+    "queue",
+    "callback"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-preset-latest": "^6.16.0",
+    "expect.js": "^0.2.0",
+    "mocha": "^3.1.2"
+  }
+}
