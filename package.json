@@ -1,7 +1,7 @@
 {
   "name": "actions-debouncer",
   "repository": "glena/actions-debouncer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Debounce actions to ensure it will be processed only once.",
   "main": "dist/index.js",
   "scripts": {
