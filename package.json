@@ -3,7 +3,7 @@
   "repository": "glena/actions-debouncer",
   "version": "1.0.0",
   "description": "Debounce actions to ensure it will be processed only once.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dist": "babel index.js -d dist",
     "test": "mocha --compilers js:babel-core/register test/**/*.test.js"
