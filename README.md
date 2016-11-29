@@ -12,7 +12,7 @@ npm i actions-debouncer
 ## Usage
 
 ```js
-import Debouncer from 'actions-debouncer'
+const Debouncer = require('actions-debouncer')
 
 const debouncer = new Debouncer( (value) => console.log(value) )
 

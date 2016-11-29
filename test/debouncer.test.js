@@ -1,5 +1,5 @@
-import expect from 'expect.js'
-import Debouncer from '../index.js'
+var expect = require('expect.js')
+var Debouncer = require('../index.js')
 
 describe('debouncer', function () {
   it('should excecute the action after 300ms', function (done) {
