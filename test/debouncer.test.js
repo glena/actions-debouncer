@@ -4,11 +4,24 @@ var Debouncer = require('../index.js')
 describe('debouncer', function () {
   it('should excecute the action after 300ms', function (done) {
     const debouncer = new Debouncer((value) => {
+      throw new Error('Should not call the action')
+    }, {timeout: 100})
+
+    debouncer.do(2)
+    debouncer.reset()
+
+    setTimeout(done, 300);
+  })
+
+  it('should ignore the action after reset', function (done) {
+    const debouncer = new Debouncer((value) => {
       expect(value).to.be(2)
       done()
     })
 
     debouncer.do(2)
+
+    setTimeout
   })
 
   it('should excecute the action after 500ms', function (done) {
